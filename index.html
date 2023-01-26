@@ -82,7 +82,7 @@
         </nav>
         <div class="container mx-auto mt-5 text-dark bg-opacity-50">
             <div
-                class="banar-content rounded-2 d-flex flex-column justify-content-center align-items-center text-center text-bg-secondary">
+                class="banar-content rounded-2 d-flex flex-column justify-content-center align-items-center text-center text-bg-secondary mx-auto">
                 <h2 class="banar-title display-3 text-light eb-font">We Provide Effective
                     <br> Legal Solutions
                 </h2>
@@ -265,17 +265,31 @@
                     <div class="col-md-6 mt-5">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item text-bg-secondary bg-opacity-25 rounded">
-                                <h2 class="accordion-header fs-3 eb-font fw-bolder title py-3 text-start ps-3"
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="accordion-header fs-3 eb-font fw-bolder title py-3 text-start ps-3"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                     aria-controls="collapseOne">
-                                    Are application fee waivers available?
+                                    Difference Between Flex and Grid?                                   
                                 </h2>
+                                <p class="accordion-header fs-3 eb-font fw-bolder title me-4 mt-3">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </p>
+                                </div>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="text-start poppins-font fw-light description">
-                                            There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form, by injected humour, .
+                                            Flexbox and Grid are both layout systems in CSS that allow you to create
+                                            flexible, responsive designs for web pages.
+                                        </p>
+                                        <p class="text-start poppins-font fw-light description">
+                                            Flexbox is a one-dimensional layout system, meaning that it deals primarily
+                                            with layout in a single dimension (either rows or columns).
+                                        </p>
+                                        <p class="text-start poppins-font fw-light description">
+                                            Grid, on the other hand, is a two-dimensional layout system that allows you
+                                            to create grid-based layouts. It is best suited for creating more complex
+                                            layouts that involve multiple rows and columns.
                                         </p>
                                     </div>
                                 </div>
@@ -285,14 +299,13 @@
                                     data-bs-toggle="collapse" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                    Are application fee waivers available?
+                                    What is Media quaries?
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p class="text-start poppins-font fw-light description">
-                                            There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form, by injected humour, .
+                                            Media queries are a feature of CSS that allow you to apply different styles to a document based on the characteristics of the device displaying it.
                                         </p>
                                     </div>
                                 </div>
@@ -302,22 +315,47 @@
                                     data-bs-toggle="collapse" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
-                                    Are application fee waivers available?
+                                    what is css box modle?
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p class="text-start poppins-font fw-light description">
-                                            There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form, by injected humour, .
+                                            web design to calculate the size and position of elements on a web page.
+                                            <p class="text-start poppins-font fw-light description">
+                                                The box model is made up of four parts:
+                                            </p>
+
+                                            <ul class="text-start poppins-font fw-light description">
+                                                <li>Content</li>
+                                                <li>Padding</li>
+                                                <li>Border</li>
+                                                <li>Margin</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item text-bg-secondary bg-opacity-25 mt-4 rounded">
+                                <h2 class="accordion-header fs-3 eb-font fw-bolder title py-3 text-start ps-3"
+                                    data-bs-toggle="collapse" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What is Semantic?
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p class="text-start poppins-font fw-light description">
+                                            Semantic HTML is a method of writing HTML code that emphasizes the meaning and structure of the content, rather than its presentation. This is achieved by using appropriate HTML elements for the different types of content on the page, such as using the header element for the header of the page, the nav element for navigation links, the article element for the main content, and so on. .
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-5">
-                        <img class="w-75" src="./images/faq.png" alt="">
+                    <div class="col-md-6 mt-5 d-flex align-items-center">
+                        <img class="w-100" src="./images/faq.png" alt="">
                     </div>
                 </div>
             </div>
@@ -430,10 +468,11 @@
                         Subscribe for our latest & Articles. We Won’t Give You Spam Mails
                     </p>
                     <div class="input-group">
-                        <input type="text" class="form-control py-2" placeholder="Email Address" aria-label="Dollar amount (with dot and two decimal places)">
+                        <input type="text" class="form-control py-2" placeholder="Email Address"
+                            aria-label="Dollar amount (with dot and two decimal places)">
                         <span class="input-group-text background-color border-0 px-4 py-2">
                             <i class="fa-solid fa-rocket text-light"></i></span>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
